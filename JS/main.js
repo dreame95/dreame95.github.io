@@ -1,7 +1,10 @@
-/* JS script to handle basic animations for desktop only
+/* ------
+	JS script to handle basic animations for 
+	desktop only and quote generator
+
 
 	Author: Austin Essinger
-*/
+   ------	*/ 
 const quotes = [
 	{
 		"quote": "A computer once beat me at chess, but it was no match for me at kick boxing.",
