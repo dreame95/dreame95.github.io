@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
         quoteBy.innerText = `- ${random.author}`;
     }
 
+    // Generate a random quote immediately on page load
+    getQuote();
+
+    // Generate a new quote when the button is pressed
     if (newQuoteBtn) {
         newQuoteBtn.addEventListener("click", getQuote);
     }
