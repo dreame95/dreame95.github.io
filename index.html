@@ -1,77 +1,291 @@
-<!doctypehtml>
-    <meta content="width=device-width,initial-scale=1" name=viewport>
-    <meta charset=UTF-8>
-    <title>Austin Essinger - Portfolio</title>
-    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css rel=stylesheet
-        crossorigin=anonymous integrity=sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T>
-    <link href=layout.css rel=stylesheet>
-    <script src=https://kit.fontawesome.com/90a4adb002.js></script>
-    <header>
-        <nav>
-            <ul class="fixed-top nav">
-                <li class=nav-item><a href=#about class=nav-link>About Me</a>
-                <li class=nav-item><a href=#contact class=nav-link>Contact</a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="jumbotron jumbotron-fluid">
-            <div class=container>
-                <h1 class=display-4>Austin Essinger</h1>
-                <p class=lead><em>Your all-in-one IT problem solver.</em>
-                <ul id=social-header>
-                    <li><a href=https://www.linkedin.com/in/austin-essinger-311467b4/ target=_blank><i
-                                class="fab fa-linkedin"></i></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Essinger - IT Security Specialist</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="layout.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <i class="fa-solid fa-shield-halved text-info"></i>
+                <span>AUSTIN ESSINGER</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competencies">Competencies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Security Initiatives</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </main>
-    <section class=container id=about>
-        <div class=row>
-            <div class="col-12 col-sm-12 col-lg-3 col-xl-3"><img alt="Image of Austin" class="img-fluid img-thumbnail"
-                    src=images/pfp.jpg id=main-image></div>
-            <div class="col-12 col-sm-12 col-lg-9 col-xl-9">
-                <h3>Stay Awhile and Listen!</h3>
-                <hr class="mb-5 mt-2">
-                <p>I'm an IT Professional based around <em>Findlay, Ohio</em>. I graduated from Owens Community College with an Associate
-                Degree in Computer Programming Technology (3.5 GPA), buidling on the technical skills I first developed while attending
-            Millstream Career Center.
-                </p>
-                <p> Currently, I work in the healthcare industry, where I'm recognized by peers and supervisors for my hard work,
-                    problem-solving skills, and innovative approach to technical challenges. Whether it's building a computer,
-                    managing infrastructure, or automating workflows, I take pride in delivering reliable, efficient solutions.
-                </p>
-                <p> When I'm not troubleshooting or tinkering in my homelab, You'll probably find me reading, gaming, or diving into a good series.
-                    I'm a fan of all kinds of books-<em>Harry Potter</em> and <em>The Five Kingdoms</em> are among my favorites- and I've spent more hours than I'd like to admit in Diablo II
-                </p>
-                
-                <h5 id=quote-text>"You miss 100% of the shots you don't take"</h5>
-                <h6 id=quote-by>-Michael Scott</h6>
+    </nav>
+
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-lock"></i> Healthcare IT Security Specialist
+                    </div>
+                    <h1 class="hero-title">Defending Critical Infrastructure & Securing Identity</h1>
+                    <p class="hero-subtitle">
+                        Dedicated to safeguarding sensitive healthcare ecosystems through automated RBAC onboarding, real-time threat monitoring, endpoint hardening, and proactive risk governance.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-cyber"><i class="fa-solid fa-shield-cat me-2"></i>View Security Work</a>
+                        <a href="#contact" class="btn btn-outline-light rounded-3 px-4 py-2 text-decoration-none d-inline-flex align-items-center"><i class="fa-regular fa-paper-plane me-2"></i>Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="term-dot red"></div>
+                            <div class="term-dot yellow"></div>
+                            <div class="term-dot green"></div>
+                            <span class="ms-2 text-light small fw-bold">security-status.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="mb-1"><span class="text-info fw-bold">austin@secops:~$</span> status --system</p>
+                            <p class="mb-1 text-light">[+] Role: IT Security Specialist</p>
+                            <p class="mb-1 text-light">[+] Infrastructure: 10 Hospitals & Clinics</p>
+                            <p class="mb-1 text-light">[+] RBAC Automation: ENABLED (PowerShell/Graph)</p>
+                            <p class="mb-1 text-light">[+] SIEM Alerting: ACTIVE</p>
+                            <p class="mb-0 text-success fw-bold">[✓] Environment Hardened & Compliant</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class=container id=contact>
-        <h3>Need to get a hold of me?</h3>
-        <hr>
-        <p id=form-subtitle>Send me an email using this nifty form, or get ahold of me using the links below the form
-        <form action=https://formspree.io/f/xpwozqry enctype=multipart/form-data method=POST>
-            <div class=row>
-                <div class="col-12 form-lables"><label for=name>Name</label> <input type=text name=name
-                        placeholder="Severus Snape" required></div>
+
+
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="glass-card">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-3 text-center">
+                        <img src="images/pfp.jpg" alt="Austin Essinger" class="profile-img img-fluid">
+                    </div>
+                    <div class="col-lg-9">
+                        <h2 class="fw-bold mb-3">About Me</h2>
+                        <p class="fs-5 text-white">
+                            I’m an <strong>IT Security Specialist</strong> based around Findlay, Ohio. I graduated from Owens Community College with an Associate Degree in Computer Programming Technology (3.5 GPA), building on technical foundations built at Millstream Career Center.
+                        </p>
+                        <p class="card-subtext">
+                            Currently serving in healthcare IT security, I specialize in managing and defending system infrastructure across multi-site hospital and clinical environments. My primary focus revolves around <strong>automated Role-Based Access Control (RBAC) onboarding</strong>, streamlining user access lifecycle provisioning, enforcing least-privilege principles, real-time threat monitoring, and ensuring HIPAA compliance.
+                        </p>
+                        <p class="card-subtext mb-0">
+                            When I'm not auditing access permissions or tuning security telemetry in my homelab, you'll find me homebrewing mead, DMing tabletop RPG campaigns, or reading classic fiction.
+                        </p>
+
+
+                        <div class="quote-box">
+                            <p class="fst-italic mb-1 text-white fs-6" id="quote-text">"A computer once beat me at chess, but it was no match for me at kick boxing."</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="text-info small fw-bold" id="quote-by">- Emo Philips</span>
+                                <button class="btn btn-sm btn-outline-info py-0 px-2 fs-7" id="new-quote-btn">
+                                    <i class="fa-solid fa-arrows-rotate me-1"></i> New Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class=row>
-                <div class="col-12 form-lables"><label for=emal>E-mail</label> <input type=email name=email
-                        placeholder=severus.snape@hogwarts.edu required></div>
-            </div>
-            <div class=row>
-                <div class="col-12 form-lables"><label for=message>Body</label> <textarea name=message
-                        placeholder="Enter your incantation here" required></textarea></div>
-            </div><input type=submit id=submit value=Send>
-            <p>By submitting this form, you agree to receive automated messages from us</p>
-        </form>
+        </div>
     </section>
-    <ul class=container id=social>
-        <li><a href=https://www.linkedin.com/in/austin-essinger-311467b4/ target=_blank><i
-                    class="fab fa-linkedin"></i></a>
-    </ul>
-    <script src=JS/main.js></script>
+
+    <section id="competencies" class="py-5">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4">Core Competencies</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card">
+                        <i class="fa-solid fa-user-shield text-info fs-3 mb-3"></i>
+                        <h4 class="text-white">Automated RBAC Onboarding</h4>
+                        <p class="card-subtext">Streamlining identity management, provisioning role-based permissions, and managing least-privilege access lifecycle.</p>
+                        <div>
+                            <span class="skill-tag">Active Directory</span>
+                            <span class="skill-tag">PowerShell Scripting</span>
+                            <span class="skill-tag">Microsoft Graph API</span>
+                            <span class="skill-tag">Least Privilege</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card">
+                        <i class="fa-solid fa-id-badge text-info fs-3 mb-3"></i>
+                        <h4 class="text-white">User Access & Privileges</h4>
+                        <p class="card-subtext">Automating user account lifecycle management, password resets, account lockouts, and strict permission compliance audits.</p>
+                        <div>
+                            <span class="skill-tag">Account Provisioning</span>
+                            <span class="skill-tag">RBAC Governance</span>
+                            <span class="skill-tag">Access Control Audit</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card">
+                        <i class="fa-solid fa-shield-virus fs-3 mb-3" style="color: #34D399;"></i>
+                        <h4 class="text-white">Threat Detection & SIEM</h4>
+                        <p class="card-subtext">Real-time event logging, security alert monitoring, vulnerability scanning, and incident escalation protocols.</p>
+                        <div>
+                            <span class="skill-tag">SIEM Analytics</span>
+                            <span class="skill-tag">EDR Platforms</span>
+                            <span class="skill-tag">Vulnerability Assessment</span>
+                            <span class="skill-tag">Phishing Awareness</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card">
+                        <i class="fa-solid fa-bug-slash fs-3 mb-3" style="color: #34D399;"></i>
+                        <h4 class="text-white">Endpoint & HIPAA Compliance</h4>
+                        <p class="card-subtext">Deploying endpoint protections, managing security patches, analyzing vulnerability scans, and maintaining regulatory standards.</p>
+                        <div>
+                            <span class="skill-tag">Endpoint Protection</span>
+                            <span class="skill-tag">Patch Management</span>
+                            <span class="skill-tag">HIPAA Standards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card">
+                        <i class="fa-solid fa-server fs-3 mb-3" style="color: #C084FC;"></i>
+                        <h4 class="text-white">Infrastructure Hardening</h4>
+                        <p class="card-subtext">Maintaining physical and virtual server environments, secure networking, and disaster recovery execution.</p>
+                        <div>
+                            <span class="skill-tag">Proxmox VE</span>
+                            <span class="skill-tag">Docker Containers</span>
+                            <span class="skill-tag">LAN / Wi-Fi Security</span>
+                            <span class="skill-tag">Disaster Recovery</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4">Featured Security Initiatives</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="glass-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="fa-solid fa-id-card-clip text-info fs-2"></i>
+                            <div>
+                                <h4 class="mb-0 text-white">Automated RBAC Onboarding Engine</h4>
+                                <small class="text-info fw-bold">Identity & Privilege Governance</small>
+                            </div>
+                        </div>
+                        <p class="card-subtext">
+                            Architected custom PowerShell automation scripts integrating Active Directory and Microsoft Graph API to automate user onboarding. Dramatically reduced manual account setup errors while ensuring new clinical staff receive role-restricted access permissions from day one.
+                        </p>
+                        <div class="mt-3">
+                            <span class="skill-tag">PowerShell</span>
+                            <span class="skill-tag">Active Directory</span>
+                            <span class="skill-tag">RBAC</span>
+                            <span class="skill-tag">Microsoft Graph</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="glass-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="fa-solid fa-network-wired fs-2" style="color: #34D399;"></i>
+                            <div>
+                                <h4 class="mb-0 text-white">Healthcare Endpoint Hardening & Monitoring</h4>
+                                <small class="text-success fw-bold">Threat Defense & SIEM</small>
+                            </div>
+                        </div>
+                        <p class="card-subtext">
+                            Managed and tuned EDR agents and SIEM security alerting across 10 hospital and remote clinical site locations. Established real-time monitoring workflows for unusual network traffic and routine vulnerability remediation to maintain HIPAA compliance.
+                        </p>
+                        <div class="mt-3">
+                            <span class="skill-tag">SIEM</span>
+                            <span class="skill-tag">EDR Agent Deployment</span>
+                            <span class="skill-tag">HIPAA Compliance</span>
+                            <span class="skill-tag">Incident Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-card text-center">
+                        <h2 class="fw-bold mb-2 text-white">Get In Touch</h2>
+                        <p class="card-subtext mb-4">Have an inquiry or want to discuss security engineering? Send a message below.</p>
+
+                        <form action="https://formspree.io/f/xpwozqry" method="POST" class="text-start">
+                            <div class="mb-3">
+                                <label for="name" class="form-label form-label-bright fw-bold">NAME</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Severus Snape" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label form-label-bright fw-bold">EMAIL ADDRESS</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="severus.snape@hogwarts.edu" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label form-label-bright fw-bold">MESSAGE</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your query or message..." required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-cyber px-5">Send Message</button>
+                            </div>
+                        </form>
+
+                        <div class="mt-5 pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-center gap-4">
+                            <a href="https://www.linkedin.com/in/austin-essinger-311467b4/" target="_blank" class="text-info fs-3 text-decoration-none">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0 text-light">&copy; Austin Essinger. IT Security Specialist.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
